@@ -19,3 +19,19 @@
 
 
 https://damieng.com/blog/2015/04/24/make-home-end-keys-behave-like-windows-on-mac-os-x/
+
+# Screenshot
+- ```Press Command + Shift + 4``` to take screenshot
+
+To setup save folder
+- Press Command + Shift + 5
+- Click on Options
+- Now either pick a folder that is listed, or choose Other Location.
+
+https://www.macworld.com/article/673251/how-to-change-where-screenshots-are-saved-on-a-mac.html
+
+# F5 to refresh Chrome
+https://www.maciverse.com/make-f5-refresh-the-browser-on-a-mac.html
+
+# Switch the Control and Command Keys
+https://www.macinstruct.com/tutorials/how-to-switch-the-control-and-command-keys/
