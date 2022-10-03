@@ -45,7 +45,7 @@ https://nordlocker.com/blog/how-to-show-hidden-files-mac/#:~:text=The%20first%20
 
 # Create Shortcut to Open IntelliJ Folder
 - Open Automator from App Launcher
-- Choose Quick Action  
+- Choose ```Service```  
   - Workflow receives current: ```folders``` in ```Finder.app```
   - Search and Select ```Run Shell Script```
   - paste this script ```open -a "IntelliJ IDEA.app" "$*"``` and change Pass Input to ```as argument```
