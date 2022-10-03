@@ -43,12 +43,13 @@ https://www.macinstruct.com/tutorials/how-to-switch-the-control-and-command-keys
 
 https://nordlocker.com/blog/how-to-show-hidden-files-mac/#:~:text=The%20first%20and%20easiest%20method,as%20translucent%20in%20the%20folder.
 
-# Create Shortcut to Open IntelliJ Folder
+# Create Shortcut to Open Folder/File in IntelliJ or Terminal
 - Open Automator from App Launcher
 - Choose ```Quick Action```  
   - Workflow receives current: ```folders``` in ```Finder.app```
   - Search and Select ```Run Shell Script```
-  - paste this script ```open -a "IntelliJ IDEA.app" "$*"``` and change Pass Input to ```as argument```
+  - paste this script ```open -a "IntelliJ IDEA.app" "$*"``` or ```open -a "Terminal" "$*"```
+  -  and change Pass Input to ```as argument```
   - Save
 
 https://www.youtube.com/watch?v=V59RwTqhxzE&t=97s
