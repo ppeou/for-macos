@@ -35,3 +35,11 @@ https://www.maciverse.com/make-f5-refresh-the-browser-on-a-mac.html
 
 # Switch the Control and Command Keys
 https://www.macinstruct.com/tutorials/how-to-switch-the-control-and-command-keys/
+
+# Show Hidden files in Finder
+- open terminal
+- execute ```shell defaults write com.apple.Finder AppleShowAllFiles true ```
+- restart finder ```shell killall finder ```
+https://nordlocker.com/blog/how-to-show-hidden-files-mac/#:~:text=The%20first%20and%20easiest%20method,as%20translucent%20in%20the%20folder.
+
+
