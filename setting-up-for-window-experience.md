@@ -53,4 +53,9 @@ https://nordlocker.com/blog/how-to-show-hidden-files-mac/#:~:text=The%20first%20
 
 https://www.youtube.com/watch?v=V59RwTqhxzE&t=97s
 
+To delete
+- Open Finder, go to ~/Library/Services
+- delete a file
+
+https://www.youtube.com/watch?v=kaVHwhau1M4
 
