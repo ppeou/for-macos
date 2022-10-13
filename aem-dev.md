@@ -1,7 +1,7 @@
 ## Build-Deploy
 
 ```shell
-pareventVersion=$(grep --max-count=1 '<version>' ~/codes/rinato/master/pom.xml | awk -F '>' '{ print $2 }' | awk -F '<' '{ print $1 }');  mvn clean install -PautoInstallSinglePackage -Drinato.version=$pareventVersion -e -Dmaven.test.skip -Djacoco.skip=true;
+pareventVersion=$(grep --max-count=1 '<version>' ~/codes/dep-project/master/pom.xml | awk -F '>' '{ print $2 }' | awk -F '<' '{ print $1 }');  mvn clean install -PautoInstallSinglePackage -Ddep-project.version=$pareventVersion -e -Dmaven.test.skip -Djacoco.skip=true;
 ```
 
 ## Start AEM Instance
@@ -15,7 +15,7 @@ kill -9 $(pgrep -f 'aem-author');
 ```
 ## Open Chrome with Security Disabled
 ```shell
-open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/Users/Piseth.Peou/tmp/chrome_dev" --disable-web-security
+open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/Users/me/tmp/chrome_dev" --disable-web-security
 ```
 
 ## Auto Copy Text
