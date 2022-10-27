@@ -10,7 +10,7 @@ can install via xcode
 
 # Add maven to path to profile
 
-- ```vim Switch the Control and Command Keys```
+- ```vim ~/.zshrc```
 - add below text
 ```
 export PATH=/Users/me/apps/apache/maven/3.8.6/bin:$PATH
