@@ -6,6 +6,7 @@ pareventVersion=$(grep --max-count=1 '<version>' ~/codes/dep-project/master/pom.
 
 ## Start AEM Instance
 ```shell
+cd ~/codes/aem;
 java -jar aem-author-p4502.jar -fork -forkargs -- -Xdebug -Xrunjdwp:transport=dt_socket,address=30303,suspend=n,server=y -Xmx1520m > /dev/null 2>&1 &
 ```
 
