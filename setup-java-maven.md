@@ -1,5 +1,6 @@
 # Setup Java 
 https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
+download file: jdk-11.0.16.1_macos-aarch64_bin.dmg
 
 # Setup Maven
 - download maven via https://maven.apache.org/install.html
