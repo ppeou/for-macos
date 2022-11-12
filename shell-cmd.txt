@@ -1,0 +1,3 @@
+
+- find and remove: find . -name "*SNAPSHOT.zip" -exec rm {} \;
+- search for text in files: grep -r 'text-to-find' ~/path/to/find
