@@ -1,3 +1,4 @@
 
-- find and remove: find . -name "*SNAPSHOT.zip" -exec rm {} \;
+- find and remove file: find . -name "*SNAPSHOT.zip" -exec rm {} \;
+- find and remove folder: find . -type d -name "target" -exec rm -rf \;
 - search for text in files: grep -r 'text-to-find' ~/path/to/find
