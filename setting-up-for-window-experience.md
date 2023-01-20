@@ -60,3 +60,23 @@ To delete
 
 https://www.youtube.com/watch?v=kaVHwhau1M4
 
+# Create Shortcut to Unzip File
+- Open Automator from App Launcher
+- Choose ```Quick Action```  
+  - Workflow receives current: ```folders``` in ```Finder.app```
+  - Search and Select ```Run Shell Script```
+  - paste this script 
+ ```
+filename="$*"
+basedir=$(dirname "$*")
+filename=$(basename "$*")
+dirname=${filename%.*}
+
+cd $basedir
+makedir -p $dirname
+unzip $filename -d $dirname
+```
+  - and change Pass Input to ```as argument```
+  - Save
+
+
