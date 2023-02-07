@@ -1,0 +1,11 @@
+## Remove NODE
+
+sudo su
+cd /usr/local/include
+rm -rf node
+
+cd /usr/local/lib
+rm -rf node_modules
+
+cd /usr/local/bin
+rm -rf node npm npx node-gyp node-sass
