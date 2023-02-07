@@ -1,11 +1,41 @@
 ## Remove NODE
 
 sudo su
-cd /usr/local/include
-rm -rf node
 
-cd /usr/local/lib
-rm -rf node_modules
+cd ~/;
+rm -rf .npmrc .npm .node-gyp .node_repl_history
 
-cd /usr/local/bin
-rm -rf node npm npx node-gyp node-sass
+cd /usr/local/lib;
+rm -rf node node_modules;
+
+cd /usr/local/include;
+rm -rf node node_modules;
+
+cd /usr/local/bin;
+rm -rf node node-debug node-gyp;
+
+cd /usr/local/share/man/man1;
+rm -rf node* npm*;
+
+cd /usr/local/lib/dtrace;
+rm -rf node.d;
+
+cd /opt/local/bin;
+rm -rf node;
+
+
+cd /opt/local/include;
+rm -rf node;
+
+cd /opt/local/lib;
+rm -rf node_modules;
+
+cd /usr/local/share/doc;
+rm -rf node;
+
+cd /usr/local/share/systemtap/tapset;
+rm -rf node.stp;
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+
+#https://stackabuse.com/how-to-uninstall-node-js-from-mac-osx/
