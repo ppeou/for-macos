@@ -41,3 +41,10 @@ recorrect-ports
 folderPath="yaya/NC-active"; old_value="<aem.port>80<\/aem.port>";new_value="<aem.port>4502<\/aem.port>"; find ~/codes/$folderPath -name 'pom.xml' -type f -exec sed -i -e  "s#$old_value#$new_value#g" {} +; folderPath="norton/NC-active/ui.frontend"; old_value="target: 'http://local.norton.com'";new_value="target: 'http://localhost:4502'"; 
 find ~/codes/$folderPath -name 'webpack.dev.js' -type f -exec sed -i -e  "s#$old_value#$new_value#g" {} +; find ~/codes/$folderPath -name 'webpack.dev.js' -type f -exec sed -i -e  "s#allowedHosts#//allowedHosts#g" {} +; find ~/codes/$folderPath -name 'webpack.dev.js' -type f -exec sed -i -e  "s#host: #//host: #g" {} +; find ~/codes/$folderPath -name 'webpack.dev.js' -type f -exec sed -i -e  "s#port: 80,#port: 8080,#g" {} +;
 ```
+
+
+## Delete all local branches
+reference: https://stackoverflow.com/questions/10610327/delete-all-local-git-branches
+```bash
+git branch --merged master --no-color | grep -v "master\|stable\|main" | xargs git branch -d
+```
