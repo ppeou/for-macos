@@ -4,3 +4,4 @@
 - search for text in files: grep -r 'text-to-find' ~/path/to/find
 - find and remove file: find ~/ -name 'pom.xml-e' -type f -prune -print -exec rm -rf '{}' \;
 - find and remove folder: find ~/ -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \;
+- find words in files with extensions: find . -name "*.js" -o -name "*.ts" | xargs grep -io "\(helper\/nCompUtil\)\|\(helper\/nUtil\)"
