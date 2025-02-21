@@ -5,3 +5,5 @@
 - find and remove file: find ~/ -name 'pom.xml-e' -type f -prune -print -exec rm -rf '{}' \;
 - find and remove folder: find ~/ -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \;
 - find words in files with extensions: find . -name "*.js" -o -name "*.ts" | xargs grep -io "\(helper\/nCompUtil\)\|\(helper\/nUtil\)"
+- find and replace in files: find -L . -type f -name "*.ts" -print0 | xargs -0 sed -i '' -e 's#OLDVALUE#NEWVALUE#g'
+
