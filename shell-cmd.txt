@@ -17,3 +17,10 @@ find . \( -name "*.js" -o -name "*.ts" \) \
  -not \( -path "*/target/*" -prune \)  \
  -not \( -path "*/src/test/resources/*" -prune \) | sort | uniq> abc.txt
 
+- multiple find and replace for single folder, multiple file extensions, exclude multiple sub-folder:
+cd ~/some/folders;
+find . \( -name "*.js" -o -name "*.ts" -o -name "*.css" -o -name "*.scss" \) \
+  -not \( -path "*/coverage/*" -prune \) \
+  -not \( -path "*/dist/*" -prune \) \
+  -not \( -path "*/target/*" -prune \) | sort | uniq \
+ | xargs sed -i '' -e 's#OLDVALUE1#NEWVALUE2#g; s#OLDVALUE2#NEWVALUE2#g';
